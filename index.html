@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+
+
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <link rel="stylesheet" href="bootstrap-theme.css">
+
+    <script type="text/javascript" src="grandsys.diretive.js" ></script>
+    <script type="text/javascript" src="appFactoryModule.js" ></script>
+    <script type="text/javascript" src="app.js" ></script>
+    <title></title>
+</head>
+<body ng-app="appModule"  ng-controller="appController">
+
+<div>
+    <itemselector datasource="employees"  >
+
+        <itemtemplate>
+            <div>
+                <p>{{dataItem.name}} </p>
+                <p>{{dataItem.org}} </p>
+            </div>
+        </itemtemplate>
+
+    </itemselector>
+
+
+</div>
+
+</body>
+</html>

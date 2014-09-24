@@ -1,0 +1,20 @@
+<ul  ng-controller="parentCtrl">
+    <li ng-repeat="dataItem in datasource.children">
+
+        <div  >
+            <!--parentCtrl的scope 並沒有dataItem的屬性-->
+            <p>{{dataItem.Name}} </p>
+            <p>{{dataItem.org}} </p>
+        </div>
+
+     </li>
+ </ul>
+
+<!--我們想要的結果-->
+<ul  ng-controller="parentCtrl">
+    <li ng-repeat="dataItem in datasource.children">
+        <div >
+            <p>{{ dataItem.name }}</p>
+        </div>
+    </li>
+</ul>
